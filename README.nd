@@ -1,0 +1,35 @@
+# Creating a Real-time Data Stream Using Apache Kafka in Python
+
+Referência: https://medium.com/the-research-nest/creating-a-real-time-data-stream-using-apache-kafka-in-python-132e0e5630d3
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install kafka-python
+```
+
+## Usage
+
+```python
+
+# returns 'Bitcoin-price'
+~/projects/kafka-stream$ python3 producer.py 
+Price fetched
+Price sent to consumer
+Price fetched
+Price sent to consumer
+Price fetched
+
+
+~/projects/kafka-stream$ python3 consumer.py 
+Bitcoin price: 30555.84
+Bitcoin price: 30561.625
+Bitcoin price: 30561.625
+Bitcoin price: 30561.625
+Bitcoin price: 30562.014999990253
+Bitcoin price: 30568.08499999388
+Bitcoin price: 30568.08499999388
+
+```
